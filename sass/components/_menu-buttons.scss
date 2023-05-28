@@ -1,0 +1,29 @@
+
+.buttons {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 139%;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 94px;
+  & :hover,
+&:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-bottom: 50px;
+  & > .buttons:not(:last-child) {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,11 @@
+.img {
+    background-size: 1600px 600px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/index-picture/Img.png);
+  }

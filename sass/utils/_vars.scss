@@ -1,0 +1,85 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  margin: 0 auto;
+}
+header {
+  max-width: 1600px;
+  display: flex;
+  margin: 0 auto;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #757575;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+h3 {
+  font: 700;
+  font-size: 18px;
+  line-height: 36px;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  height: 42px;
+  margin-bottom: 50px;
+}
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #212121;
+  font-size: 14px;
+}
+link {
+  text-decoration: none;
+  color: aliceblue;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  max-width: 1600px;
+  display: flex;
+  margin: 0 auto;
+}
+a:hover,
+a:focus {
+  color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.href :hover,
+.href:focus {
+  color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+address a {
+  font-style: normal;
+  color: #fff;
+}
+
+.footer-adress a {
+  color: #ffffff;
+}
+address {
+  padding: 20px 0 9px;
+}
