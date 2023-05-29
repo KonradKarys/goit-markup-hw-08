@@ -15,9 +15,13 @@
     justify-content: space-between;
     align-items: center;
   }
-  &-title {
+  &-title {display: none;
     align-items: center;
     padding: 94px 0px 50px 0px;
+
+    @include tablet{
+      display: block;
+    }
   }
 }
 

@@ -37,7 +37,7 @@
       fill: #ffffff;
       background-color:$primaryColor;
       cursor: pointer;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: 250ms $transitionTimingDefault;
     }
   }
   .join-to-us-svg {
@@ -53,12 +53,12 @@
     &:hover {
       background-color:$primaryColor;
       cursor: pointer;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: 250ms $transitionTimingDefault;
     }
     &:focus {
       background-color: $primaryColor;
       cursor: pointer;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: 250ms $transitionTimingDefault;
     }
   }
   .icons-footer {

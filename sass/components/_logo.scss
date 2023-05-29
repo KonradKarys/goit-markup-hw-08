@@ -9,20 +9,20 @@
 
   &:hover,
   &:focus {
-    color: #2196f3;
+    color: $primaryColor;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &-light {
-    color: black;
+    color: $secondaryColorBlack;
   }
   &-dark {
     color: #ffffff;
   }
   &-color {
-    color: #2196f3;
+    color: $primaryColor;
   }
   &-primary {
-      color: black;
+      color: $secondaryColorBlack;
       display: flex;
       font-family: Raleway;
       font-size: 26px;

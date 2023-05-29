@@ -1,10 +1,10 @@
 .backdrop {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 93px;
+  left: 15px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: $secondaryColorBlack;
   z-index: 1;
 }
 
@@ -19,14 +19,13 @@
   visibility: visible;
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  min-height: 581px;
+  top: 93px;
+  left: 15px;
+  width: 480px;
+  max-width: 480px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+    0px 2px 1px $secondaryColorBlack;
   border-radius: 4px;
   padding: 40px;
   & h3 {
@@ -36,14 +35,14 @@
   }
   &-color input {
     background-color: #ffffff;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid $secondaryColorBlack;
     border-radius: 4px;
     width: 448px;
     height: 40px;
   }
   &-reg {
     text-decoration: underline;
-    color: #2196f3;
+    color:$primaryColor;
     display: flex;
   }
   &-color {
@@ -68,7 +67,7 @@
     height: 15px;
     margin-right: 8px;
     position: relative;
-    border: 2px solid #212121;
+    border: 2px solid $secondaryColorBlack;
     border-radius: 3px;
     & input {
       position: absolute;
@@ -96,30 +95,30 @@
   }
   & input:hover + svg,
   & input:focus + svg {
-    fill: #2196f3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $primaryColor;
+    transition: 250ms $transitionTimingDefault;
   }
 
   & textarea:focus,
   & textarea:hover,
   & input:focus,
   & input:hover {
-    border: 1px solid #2196f3;
-    fill: #2196f3;
+    border: 1px solid $primaryColor;
+    fill: $primaryColor;
     outline: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms $transitionTimingDefault;
   }
   &-accept input:checked + svg {
-    background-color: #2196f3;
+    background-color: $primaryColor;
     border: none;
     display: block;
     fill: #fff;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms $transitionTimingDefault;
   }
   & input:focus + svg {
-    color: #2196f3;
-    fill: #2196f3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $primaryColor;
+    fill: $primaryColor;
+    transition: 250ms $transitionTimingDefault;
   }
 }
 .is-hidden {
@@ -133,7 +132,7 @@
   transform: 100%;
 }
 .svg-icon-modal {
-  fill: #212121;
+  fill: $secondaryColorBlack;
   position: absolute;
   top: 40px;
   left: 15px;
@@ -142,7 +141,7 @@
   }
 }
 textarea {
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid $secondaryColorBlack;
   border-radius: 4px;
   margin-top: 4px;
 }
@@ -172,7 +171,7 @@ label {
   }
   & input {
     background-color: #ffffff;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid $secondaryColorBlack;
     border-radius: 4px;
     width: 448px;
     height: 40px;
