@@ -1,5 +1,5 @@
 .clients {
-  display: flex;
+  display: none;
   justify-content: space-between;
   list-style: none;
   &-link {
@@ -25,7 +25,7 @@
 
 }
 .client-item {
-  display: flex;
+  display: none;
   justify-content: center;
   list-style-type: none;
   align-items: center;

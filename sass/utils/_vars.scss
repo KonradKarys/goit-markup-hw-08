@@ -1,11 +1,32 @@
-body {
+$primaryColor: #2196f3;
+
+$secondaryColorBlack: #212121;
+$secondaryColorWhite: #fff;
+
+$tertiaryColorDark: #2f303a;
+$tertiaryColorGrey: #757575;
+$tertiaryColorLight: #afb1b8;
+
+$borderRadiusDefault: 4px;
+
+$transitionDurationDefault: 250ms;
+$transitionTimingDefault: cubic-bezier(0.4, 0, 0.2, 1);
+
+$breakpointPhoneEnd: 767px;
+$breakpointTabletStart: 768px;
+$breakpointTabletEnd: 1199px;
+$breakpointDesktopStart: 1200px;
+
+body {max-width: 480px;
+  padding: 0 15px 0 15px;
   font-family: "Roboto", sans-serif;
   color: #212121;
   margin: 0 auto;
 }
+
 header {
-  max-width: 1600px;
-  display: flex;
+  max-width: 480px;
+  display: none;
   margin: 0 auto;
 }
 p {
@@ -57,14 +78,9 @@ link {
   margin: 0;
   padding: 0;
 }
-header {
-  max-width: 1600px;
-  display: flex;
-  margin: 0 auto;
-}
 a:hover,
 a:focus {
-  color: #2196f3;
+  color:$primaryColor;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .href :hover,
@@ -72,14 +88,13 @@ a:focus {
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-address a {
-  font-style: normal;
-  color: #fff;
-}
-
 .footer-adress a {
   color: #ffffff;
 }
 address {
   padding: 20px 0 9px;
+  & a {
+    font-style: normal;
+    color: #fff;
+  }
 }

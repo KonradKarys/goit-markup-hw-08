@@ -1,5 +1,7 @@
 @use "./utils/vars";
 
+@use "./components/menu-toggle";
+@use "./components/mixins";
 @use "./components/navigations";
 @use "./components/page-header";
 @use "./components/container";
@@ -16,3 +18,4 @@
 @use "./components/what-we-do";
 @use "./components/awer-team";
 @use "./components/us-clients";
+@use "./components/mobile-menu";

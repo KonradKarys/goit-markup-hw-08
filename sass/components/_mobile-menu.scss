@@ -1,0 +1,15 @@
+.menu-container{
+    position: fixed;
+    background-color: white;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_close-button{
+        position: absolute;
+        right: 8px;
+        top:8px;
+    }
+
+}

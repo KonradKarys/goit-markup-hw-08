@@ -24,41 +24,81 @@
       <div class="logo">
         <a class="logo-primary" href="./index.html"><span class="logo-color">Web</span>Studio</a>
       </div>
-      <div class="header-navigation">
-        <nav>
-          <ul class="navi">
-            <li class="navi-item">
-              <a class="navi-link  active" href="./index.html">Agencja</a>
+      <button class="menu-toggle js-open-menu">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+
+    
+
+        <div class="header-navigation">
+          <nav>
+            <ul class="navi">
+              <li class="navi-item">
+                <a class="navi-link active" href="./index.html">Agencja</a>
+              </li>
+              <li class="navi-item">
+                <a class="navi-link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="navi-item">
+                <a class="navi-link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header-adress">
+          <ul>
+            <li>
+              <a class="clients-item" href="mailto:info@devstudio.com"><svg class="clients-item-svg" width="16px"
+                  height="12px">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="navi-item">
-              <a class="navi-link" href="./portfolio.html">Portfolio</a>
+            <li>
+              <a class="clients-item" href="tel:48111111111"><svg class="clients-item-svg" width="10px" height="16px">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111
+              </a>
             </li>
-            <li class="navi-item"><a class="navi-link" href="#">Kontakt</a></li>
           </ul>
-        </nav>
-      </div>
-      <div class="header-adress">
-        <ul>
-          <li>
-            <a class="clients-item" href="mailto:info@devstudio.com"><svg class="clients-item-svg" width="16px"
-                height="12px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a class="clients-item" href="tel:48111111111"><svg class="clients-item-svg" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111
-            </a>
-          </li>
-        </ul>
-      </div>
+        </div>
     </div>
   </header>
-
+  <button
+  class="menu-toggle js-open-menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+>
+  <svg class="mobile-menu__icon" width="40" height="40">
+    <use href="images/icons.svg#icon-mobile-menu-open"></use>
+  </svg>
+</button>
+    <div class="mobile-menu">
+     
+        <a class="" href="./index.html">Agencja</a>
+      
+      
+        <a class="" href="./portfolio.html">Portfolio</a>
+     
+      
+        <a class="" href="#">Kontakt</a>
+      
+    </div>
+  </div>
+<div>
+  <a href="">Instagram</a>
+  <a href="">Twitter</a>
+  <a href="">Linkedin</a>
+  <a href="">Facebook</a>
+</div>
+ 
   <main>
     <!--HERO-->
     <section class="img">
@@ -415,12 +455,11 @@
             <svg class="svg-icon-bird" width="18px" height="18px" fill="ffffff">
               <use href="./images/icons.svg#icon-checkmark"></use>
             </svg></span>
-            <span class="modal-check">
-              Oświadczam iż akceptuję
-              <a class="modal-reg" href="#">Regulamin</a> i
-              <a class="modal-reg" href="#">politykę prywatności</a>
-            </span>
-          
+          <span class="modal-check">
+            Oświadczam iż akceptuję
+            <a class="modal-reg" href="#">Regulamin</a> i
+            <a class="modal-reg" href="#">politykę prywatności</a>
+          </span>
         </label>
 
         <button class="button-modal">Wyślij</button>
@@ -429,6 +468,7 @@
   </div>
 
   <script src="modal.js"></script>
+  <script src="mobile-menu.js"></script>
 </body>
 
 </html>
